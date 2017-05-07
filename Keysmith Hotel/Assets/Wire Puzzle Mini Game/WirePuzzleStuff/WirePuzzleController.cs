@@ -18,13 +18,11 @@ public class Line
 }
 
 public class WirePuzzleController : MonoBehaviour {
-	Sprite s;
 
 	public List<Line> puzzlePlacementSolutionLines;
 
 	// Use this for initialization
 	void Start () {
-		Debug.Log("hey start");
 		Load("Assets/Wire Puzzle Mini Game/WirePuzzleSolutions/WirePuzzle3.txt");
 	}
 
