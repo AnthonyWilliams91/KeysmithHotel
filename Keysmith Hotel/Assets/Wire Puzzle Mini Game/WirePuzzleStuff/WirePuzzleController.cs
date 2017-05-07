@@ -8,6 +8,7 @@ public class Line
 {
 	public Vector2 pointA;
 	public Vector2 pointB;
+	public bool fused = false;
 
 	public Line(Vector2 initA, Vector2 initB)
 	{
@@ -17,13 +18,11 @@ public class Line
 }
 
 public class WirePuzzleController : MonoBehaviour {
-	Sprite s;
 
 	public List<Line> puzzlePlacementSolutionLines;
 
 	// Use this for initialization
 	void Start () {
-		Debug.Log("hey start");
 		Load("Assets/Wire Puzzle Mini Game/WirePuzzleSolutions/WirePuzzle3.txt");
 	}
 
@@ -57,8 +56,8 @@ public class WirePuzzleController : MonoBehaviour {
 						string[] entries = line.Split(',');
 						if (entries.Length > 0)
 						{
-							Vector2 a = new Vector2(float.Parse(entries[0]), float.Parse(entries[1]));
-							Vector2 b = new Vector2(float.Parse(entries[2]), float.Parse(entries[3]));
+							Vector2 a = new Vector2(float.Parse(entries[0]), 900-float.Parse(entries[1]));
+							Vector2 b = new Vector2(float.Parse(entries[2]), 900-float.Parse(entries[3]));
 							puzzlePlacementSolutionLines.Add(new Line(a, b));
 						}
 					}
