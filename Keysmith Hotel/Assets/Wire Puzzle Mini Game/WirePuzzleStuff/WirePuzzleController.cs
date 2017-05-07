@@ -24,7 +24,7 @@ public class WirePuzzleController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Debug.Log("hey start");
-		Load("Assets/WirePuzzleStuff/WirePuzzle3.txt");
+		Load("Assets/Wire Puzzle Mini Game/WirePuzzleSolutions/WirePuzzle3.txt");
 	}
 
 	private bool Load(string fileName)
