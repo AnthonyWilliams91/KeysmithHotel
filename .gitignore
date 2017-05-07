@@ -4,3 +4,4 @@ obj
 ProjectSettings
 *.csproj
 *.sln
+/Keysmith Hotel/.vs
