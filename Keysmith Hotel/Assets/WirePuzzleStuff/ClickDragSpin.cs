@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 [RequireComponent(typeof(CircleCollider2D))]
 
-public class ClickDragSpin : MonoBehaviour
-{
+
+public class ClickdragSpin : MonoBehaviour {
 	public const float speed = 167;
 	private bool dragging = false;
 

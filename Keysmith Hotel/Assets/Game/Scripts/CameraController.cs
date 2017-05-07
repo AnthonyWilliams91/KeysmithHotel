@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CameraController : MonoBehaviour {
 
-	public GameObject player = GameObject.FindGameObjectWithTag("");
+	public GameObject player = GameObject.FindGameObjectWithTag("Player");
 
 	private Vector3 offset;
 
@@ -14,7 +14,7 @@ public class CameraController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
-		if(player.transform.position.x >= 0 && player.transform.position.x <= 182.7) {
+		if(player.transform.position.x >= 0 && player.transform.position.x <= 191) {
 			transform.position = player.transform.position + offset;	
 		}
 	}
