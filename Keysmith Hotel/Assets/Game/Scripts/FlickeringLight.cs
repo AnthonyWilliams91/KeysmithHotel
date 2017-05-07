@@ -3,7 +3,6 @@ using System.Collections;
 //using System;
 
 public class FlickeringLight : MonoBehaviour {
-	public GameObject go;
 	public Light light;
 	static float timeLim;
 	public float remove;
@@ -14,10 +13,9 @@ public class FlickeringLight : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		go = GetComponent<GameObject> ();
-		light = GetComponent<Light> ();
+		light = this.GetComponent<Light> ();
 		lightIsOn = true;
-		timeLim = Random.Range (12, 20);
+		timeLim = Random.Range (40, 60);
 	}
 
 	// Update is called once per frame
@@ -26,8 +24,8 @@ public class FlickeringLight : MonoBehaviour {
 		remove = Time.deltaTime;
 		timeLim -= remove;
 
-		steadyRange = Random.Range(2, 4);
-		flickeringRange = Random.Range(1, 3);
+		steadyRange = Random.Range(2, 8);
+		flickeringRange = Random.Range(5, 10);
 
 		// Start flickering
 		if (timeLim < (timeLim / 2) + steadyRange + flickeringRange && timeLim > (timeLim / 2) + steadyRange) {
@@ -53,7 +51,7 @@ public class FlickeringLight : MonoBehaviour {
 		}
 
 		if (timeLim <= 0) {
-			timeLim = Random.Range (12, 23);
+			timeLim = Random.Range (14, 30);
 		}
 	}
 

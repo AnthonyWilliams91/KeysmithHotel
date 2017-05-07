@@ -2,6 +2,7 @@ Library
 Temp
 obj
 ProjectSettings
-*.csproj
-*.sln
+/Keysmith Hotel/*.csproj
+/Keysmith Hotel/*.sln
+/Keysmith Hotel/*.userprefs
 /Keysmith Hotel/.vs
