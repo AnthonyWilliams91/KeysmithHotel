@@ -1,1 +1,6 @@
 Library
+Temp
+obj
+ProjectSettings
+*.csproj
+*.sln
