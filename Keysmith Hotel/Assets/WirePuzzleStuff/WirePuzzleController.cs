@@ -4,10 +4,10 @@ using System.Text;
 using System.IO;
 using UnityEditor.Sprites;
 
-class Line
+public class Line
 {
-	Vector2 pointA;
-	Vector2 pointB;
+	public Vector2 pointA;
+	public Vector2 pointB;
 
 	public Line(Vector2 initA, Vector2 initB)
 	{
@@ -19,17 +19,12 @@ class Line
 public class WirePuzzleController : MonoBehaviour {
 	Sprite s;
 
-	List<Line> puzzlePlacementSolutionLines;
+	public List<Line> puzzlePlacementSolutionLines;
 
 	// Use this for initialization
 	void Start () {
 		Debug.Log("hey start");
 		Load("Assets/WirePuzzleStuff/WirePuzzle3.txt");
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
 	}
 
 	private bool Load(string fileName)
@@ -81,5 +76,11 @@ public class WirePuzzleController : MonoBehaviour {
 			Debug.Log(e);
 			return false;
 		}
+	}
+
+
+	// Update is called once per frame
+	void Update()
+	{
 	}
 }
