@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e0c145941455a460f9012b04dd99601b
-timeCreated: 1494193805
+guid: 694443c70a89d4d5cb4411bc1e755aa0
+timeCreated: 1494180408
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Closed_Door_0
+    21300000: Stairs2_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -59,13 +59,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Closed_Door_0
+      name: Stairs2_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 0
-        width: 436
-        height: 694
+        width: 441
+        height: 827
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

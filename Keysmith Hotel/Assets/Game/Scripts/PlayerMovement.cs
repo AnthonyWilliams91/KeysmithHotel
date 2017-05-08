@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D> ();
+		rb2d.freezeRotation = true;
 		spr = GetComponent<SpriteRenderer> ();
 		anim = gameObject.GetComponent<Animator> ();
 		floor = GameObject.FindGameObjectWithTag ("Ground");
